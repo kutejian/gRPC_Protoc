@@ -1,0 +1,2 @@
+obj\Debug\net7.0/Messages.cs \
+obj\Debug\net7.0/MessagesGrpc.cs: ../WebApplicationServer/Protos/Messages.proto

@@ -1,0 +1,37 @@
+﻿syntax ="proto3";
+option csharp_namespace ="WebApplication1.Protos";
+
+message User{
+	int32 Id = 1;
+	string Name = 2;
+	string LastName =3;
+	int32 Age = 4;
+	float salary = 5;
+}
+
+message GetByUserRequest{
+	int32 Id = 1;
+}
+message UserResponse{
+	User user = 1;
+}
+message GetAllRequest{ }
+
+message AddUserRequest{
+	User user = 1; 
+}
+message AddUserResponse{
+	bool isOk = 1; 
+}
+message LoginUserResponse{
+	string Token = 1;
+}
+
+
+
+service UserService{
+	rpc GetByUser(GetByUserRequest) returns(UserResponse);
+	rpc GetAll(GetAllRequest) returns(stream UserResponse);
+	rpc AddUser(stream AddUserRequest) returns(stream AddUserResponse);
+	rpc LoginUser(stream AddUserRequest) returns(stream LoginUserResponse);
+}

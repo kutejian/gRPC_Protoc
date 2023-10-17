@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "2Cbi9+ofFM0E7U9ecAIiaCjiCRsWt5/Kht3Xo0eTYYU=",
+  "Source": "WebApplicationClient",
+  "BasePath": "_content/WebApplicationClient",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
